@@ -1,0 +1,42 @@
+{
+	"name": "random-profiles-types",
+	"version": "1.3.0",
+	"description": "TypeScript types for the Random Profiles API — profiles, companies, relationships, filters, and response envelopes.",
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsc -p .",
+		"prepublishOnly": "bun run build"
+	},
+	"keywords": [
+		"fake-data",
+		"test-data",
+		"profiles",
+		"companies",
+		"seed-data",
+		"typescript",
+		"types",
+		"developer-tools"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gusdeboer/random-profiles-types.git"
+	},
+	"homepage": "https://random-profiles.com",
+	"bugs": {
+		"url": "https://github.com/gusdeboer/random-profiles-types/issues"
+	},
+	"devDependencies": {
+		"typescript": "^5.4.0"
+	}
+}
